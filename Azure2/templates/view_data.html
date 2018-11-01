@@ -1,0 +1,13 @@
+<html>
+<title> Data in Uploaded file</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<center><h1> Balaji <br>
+10001576836</h1></center>
+<h1> Data in Uploaded file</h1>
+<body>
+<center>
+{% for rows in data %}
+	{{  rows  }}<br>
+{% endfor %}
+</center>
+</body>

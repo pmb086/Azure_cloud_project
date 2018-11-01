@@ -1,0 +1,16 @@
+<html>
+<title> Search Results</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<body>
+<center> Search Results</center>
+
+<br><br><br>
+
+<center><h2>Query execution time: {{ exe }} seconds</h2>
+<br><br>
+<center>
+{% for rows in data %}
+	{{  rows  }}<br>
+{% endfor %}
+</center>
+</body>

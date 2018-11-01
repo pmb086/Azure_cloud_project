@@ -1,0 +1,15 @@
+<html>
+<title> Search Engine</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   <body>
+   <center><h1> Balaji <br>
+10001576836</h1></center>
+   <h1>Cluster Analysis of people survived</h1>
+   <br> <br> <br> <br> <br> <br>
+      <center><form method="POST" action="{{ url_for('cluster_success') }}" enctype=multipart/form-data >
+         Input number of clusters:  <input type = "number" name = "cluster" />
+         <input type = "submit" name = "Search"/>
+      </form></center>
+      
+   </body>
+</html>

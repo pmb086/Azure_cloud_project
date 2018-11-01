@@ -1,0 +1,21 @@
+<html>
+<title> Search Engine</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   <body>
+   <center><h1> Balaji <br>
+10001576836</h1></center>
+   <h1>Search by Range</h1>
+   <br> <br> <br> <br> <br> <br>
+   <center> Choose parameter: <select name="par" form ="eq">
+  <option value="latitude">Latitude</option>
+  <option value="longitude">Longitude</option>
+  <option value="mag">Magnitude</option>
+</select> 
+      <form method="POST" action="{{ url_for('restrict_success') }}" enctype=multipart/form-data id ="eq">
+		 <br>Input a value: 
+		 <input type = "number" name = "value" /><br>
+		 <input type = "submit" name = "Search"/>
+      </form></center>
+      
+   </body>
+</html>
